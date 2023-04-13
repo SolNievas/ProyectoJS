@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+/*Inicio*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*Sección de Contacto*/
+
+.contact-wrapper {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(175, 165, 165, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+  
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-x: hidden;
+}
+  
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+  
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+  
+.button {
+    background: rgba(173, 168, 168, 0.3);
+    color: rgb(22, 21, 21);
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+
+/*Footer*/
+
+.descripcion {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto;
+    font-size: 17px;
+}
+  
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+footer .contenedor > p {
+    margin: 10px auto;
+}
+
+.box .grupo-2 {
+    background-color:#f0e4e44d;
+    padding: 25px 10px;
+    text-align: center;
+    color: black
+}
+
+.box .grupo-2 small{
+    font-size: 15px;
+}
+
+  
