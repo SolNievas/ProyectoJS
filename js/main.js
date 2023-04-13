@@ -93,3 +93,20 @@ localStorage.setItem('registro', JSON.stringify(registro));
 let registroLS = JSON.parse(localStorage.getItem('registro'));
 console.log(typeof registroLS);
 console.log(registroLS);
+
+//Fetch.
+
+fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "post",
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+    },
+    body: JSON.stringify({
+        title: "Formulario",
+        body: "Registro de usuario en Form Company",
+    })
+})
+.then((response) => response.json())
+.then((data) => {
+    console.log(data);
+});
