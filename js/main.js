@@ -21,25 +21,25 @@ form.addEventListener("submit", e => {
     e.preventDefault();
     let ingresar = false
 
-    if (nombre.value.length < 3) {
+    if (nombre.value.length <=3) {
         Swal.fire('El Nombre debe tener más de 3 caracteres',
         '*Asegurate de completar todos los campos para continuar*');       
         ingresar = true
     }
 
-    else if (apellido.value.length < 3) {
+    else if (apellido.value.length <=3) {
         Swal.fire('El Apellido debe tener más de 3 caracteres',
         '*Asegurate de completar todos los campos para continuar*');
         ingresar = true
     }
 
-    else if (usuario.value.length < 4) {
+    else if (usuario.value.length <= 4) {
         Swal.fire('El Nombre de Usuario debe tener más de 4 caracteres',
         '*Asegurate de completar todos los campos para continuar*');
         ingresar = true
     }
 
-    else if (contraseña.value.length < 6) {
+    else if (contraseña.value.length <= 6) {
         Swal.fire('La Contraseña debe tener más de 6 caracteres',
         '*Asegurate de completar todos los campos para continuar*'); 
         ingresar = true       
